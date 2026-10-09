@@ -5,7 +5,7 @@
     </marker>
   </defs>
   <g transform="translate(20, 20)">
-    <rect x="-0" y="0" width="653" height="1849.56" rx="5" ry="5" fill="#ecf2dc99" stroke="#a8ae8e" stroke-width="1" />
+    <rect x="0" y="0" width="653" height="1849.56" rx="5" ry="5" fill="#ecf2dc99" stroke="#a8ae8e" stroke-width="1" />
     <text x="8" y="12" text-anchor="start" dominant-baseline="central" font-size="13px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333" font-weight="bold">Edge Devices</text>
     <rect x="678.33" y="190.6" width="600.95" height="1551.16" rx="5" ry="5" fill="#ecf2dc99" stroke="#a8ae8e" stroke-width="1" />
     <text x="686.33" y="202.6" text-anchor="start" dominant-baseline="central" font-size="13px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333" font-weight="bold">Edge Computing</text>

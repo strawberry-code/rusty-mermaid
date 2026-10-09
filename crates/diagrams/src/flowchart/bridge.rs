@@ -46,7 +46,7 @@ pub fn layout(diagram: &FlowDiagram) -> LayoutResult {
 
 /// Layout with a custom text measurer.
 pub fn layout_with_measurer(diagram: &FlowDiagram, measurer: &impl TextMeasure) -> LayoutResult {
-    let (mut graph, id_map) = build_flow_graph(diagram, measurer);
+    let (mut graph, mut id_map) = build_flow_graph(diagram, measurer);
 
     let config = DagreConfig {
         rankdir: diagram.direction,
@@ -54,7 +54,14 @@ pub fn layout_with_measurer(diagram: &FlowDiagram, measurer: &impl TextMeasure) 
     };
     let extracted = extract_directed_subgraphs(diagram, &mut graph, &id_map, measurer);
 
+    // I nodi interni a un sottografo con direzione propria hanno già la loro
+    // posizione relativa: tolti dal grafo principale non vi occupano spazio.
+    let detached = detach_inner_nodes(&extracted, &id_map, &mut graph);
     rusty_mermaid_dagre::pipeline::layout(&mut graph, &config);
+    for (id, label) in detached {
+        let nid = graph.add_node(label);
+        id_map.insert(id, nid);
+    }
 
     apply_subgraph_positions(&extracted, &id_map, &mut graph);
     recenter_compounds(diagram, &extracted, &id_map, &mut graph);
@@ -69,18 +76,12 @@ pub fn layout_with_measurer(diagram: &FlowDiagram, measurer: &impl TextMeasure) 
     max_x = max_x.max(sg_max_x);
     max_y = max_y.max(sg_max_y);
 
-    expand_bounds_and_shift(&edges, &mut nodes, &mut subgraphs, &mut max_x, &mut max_y);
-
-    // Apply shift to edges separately (needs mutable borrow on edges)
-    let (min_x, min_y) = compute_edge_bounds_min(&edges);
-    if min_x < 0.0 || min_y < 0.0 {
-        let dx = if min_x < 0.0 { -min_x } else { 0.0 };
-        let dy = if min_y < 0.0 { -min_y } else { 0.0 };
-        for edge in &mut edges {
-            for pt in &mut edge.points {
-                pt.x += dx;
-                pt.y += dy;
-            }
+    let (dx, dy) =
+        expand_bounds_and_shift(&edges, &mut nodes, &mut subgraphs, &mut max_x, &mut max_y);
+    for edge in &mut edges {
+        for pt in &mut edge.points {
+            pt.x += dx;
+            pt.y += dy;
         }
     }
 
@@ -91,6 +92,23 @@ pub fn layout_with_measurer(diagram: &FlowDiagram, measurer: &impl TextMeasure) 
         width: max_x,
         height: max_y,
     }
+}
+
+/// Toglie dal grafo principale i nodi già disposti dentro i sottografi estratti.
+fn detach_inner_nodes<'a>(
+    extracted: &'a [ExtractedLayout],
+    id_map: &BTreeMap<&'a str, NodeId>,
+    graph: &mut Graph<NodeLabel, EdgeLabel>,
+) -> Vec<(&'a str, NodeLabel)> {
+    let ids = extracted.iter().flat_map(|ex| {
+        let nodes = ex.inner_nodes.iter().map(|n| n.0.as_str());
+        nodes.chain(ex.inner_subgraphs.iter().map(|n| n.0.as_str()))
+    });
+    ids.filter_map(|id| {
+        let nid = *id_map.get(id)?;
+        Some((id, graph.remove_node(nid)?))
+    })
+    .collect()
 }
 
 fn apply_subgraph_positions(
@@ -248,39 +266,26 @@ fn extract_subgraph_layouts(
     (subgraphs, max_x, max_y)
 }
 
-fn compute_edge_bounds_min(edges: &[EdgeLayout]) -> (f64, f64) {
-    let label_pad = 4.0;
-    let mut min_x: f64 = 0.0;
-    let mut min_y: f64 = 0.0;
-    for edge in edges {
-        for pt in &edge.points {
-            min_x = min_x.min(pt.x);
-            min_y = min_y.min(pt.y);
-        }
-        if let Some(size) = edge.label_size {
-            if edge.points.len() < 2 {
-                continue;
-            }
-            let mid = edge.points[edge.points.len() / 2];
-            let lw = size.0 + label_pad * 2.0;
-            let lh = size.1 + label_pad * 2.0;
-            min_x = min_x.min(mid.x - lw / 2.0);
-            min_y = min_y.min(mid.y - lh / 2.0);
-        }
-    }
-    (min_x, min_y)
-}
-
 fn expand_bounds_and_shift(
     edges: &[EdgeLayout],
     nodes: &mut [NodeLayout],
     subgraphs: &mut [SubgraphLayout],
     max_x: &mut f64,
     max_y: &mut f64,
-) {
+) -> (f64, f64) {
     let label_pad = 4.0;
     let mut min_x: f64 = 0.0;
     let mut min_y: f64 = 0.0;
+    // Nodi e sottografi contano come gli archi: nulla deve uscire a sinistra o
+    // in alto (`recenter_compounds` può spostare un riquadro oltre l'origine).
+    for n in nodes.iter() {
+        min_x = min_x.min(n.x - n.width / 2.0);
+        min_y = min_y.min(n.y - n.height / 2.0);
+    }
+    for sg in subgraphs.iter() {
+        min_x = min_x.min(sg.x - sg.width / 2.0);
+        min_y = min_y.min(sg.y - sg.height / 2.0);
+    }
     for edge in edges {
         for pt in &edge.points {
             min_x = min_x.min(pt.x);
@@ -302,20 +307,19 @@ fn expand_bounds_and_shift(
         }
     }
 
-    if min_x < 0.0 || min_y < 0.0 {
-        let dx = if min_x < 0.0 { -min_x } else { 0.0 };
-        let dy = if min_y < 0.0 { -min_y } else { 0.0 };
-        for node in nodes.iter_mut() {
-            node.x += dx;
-            node.y += dy;
-        }
-        for sg in subgraphs.iter_mut() {
-            sg.x += dx;
-            sg.y += dy;
-        }
-        *max_x += dx;
-        *max_y += dy;
+    let dx = if min_x < 0.0 { -min_x } else { 0.0 };
+    let dy = if min_y < 0.0 { -min_y } else { 0.0 };
+    for node in nodes.iter_mut() {
+        node.x += dx;
+        node.y += dy;
     }
+    for sg in subgraphs.iter_mut() {
+        sg.x += dx;
+        sg.y += dy;
+    }
+    *max_x += dx;
+    *max_y += dy;
+    (dx, dy)
 }
 
 /// Build the dagre graph from the flowchart IR: vertices, subgraph hierarchy, edges.

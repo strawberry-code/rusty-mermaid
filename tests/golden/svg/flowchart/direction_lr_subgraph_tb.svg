@@ -1,36 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 794.8 295.2" width="794.8" height="295.2">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 726 295.2" width="726" height="295.2">
   <defs>
     <marker id="arrow-point-333333" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
       <path d="M10 5 L0 10 L4 5 L0 0 Z" fill="#333333" />
     </marker>
   </defs>
   <g transform="translate(20, 20)">
-    <rect x="211" y="0" width="193" height="255.2" rx="5" ry="5" fill="#ecf2dc99" stroke="#a8ae8e" stroke-width="1" />
-    <text x="219" y="12" text-anchor="start" dominant-baseline="central" font-size="13px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333" font-weight="bold">Authentication</text>
-    <rect x="454" y="0" width="150" height="255.2" rx="5" ry="5" fill="#ecf2dc99" stroke="#a8ae8e" stroke-width="1" />
-    <text x="462" y="12" text-anchor="start" dominant-baseline="central" font-size="13px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333" font-weight="bold">Processing</text>
-    <path d="M126.6 127.6 L136.5 127.6 C146.4 127.6 166.2 127.6 180.27 127.6 C194.33 127.6 202.67 127.6 206.83 127.6 L208.6 127.6" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M404 127.6 L408.17 127.6 C412.33 127.6 420.67 127.6 429 127.6 C437.33 127.6 445.67 127.6 449.83 127.6 L451.6 127.6" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M604 127.6 L608.17 127.6 C612.33 127.6 620.67 127.6 629 127.6 C637.33 127.6 645.67 127.6 649.83 127.6 L651.6 127.6" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M529 73.6 L529 77.77 C529 81.93 529 90.27 529 98.6 C529 106.93 529 115.27 529 119.43 L529 121.2" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M529 156.4 L529 160.57 C529 164.73 529 173.07 529 181.4 C529 189.73 529 198.07 529 202.23 L529 204" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M307.5 73.6 L307.5 77.77 C307.5 81.93 307.5 90.27 307.5 98.6 C307.5 106.93 307.5 115.27 307.5 119.43 L307.5 121.2" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M307.5 156.4 L307.5 160.57 C307.5 164.73 307.5 173.07 307.5 181.4 C307.5 189.73 307.5 198.07 307.5 202.23 L307.5 204" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <rect x="34.4" y="111.2" width="92.2" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="80.5" y="127.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Request</text>
-    <rect x="244.2" y="40.8" width="126.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="307.5" y="57.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Check Token</text>
-    <rect x="227" y="123.6" width="161" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="307.5" y="140" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Validate Claims</text>
-    <rect x="252.8" y="206.4" width="109.4" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="307.5" y="222.8" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Authorize</text>
-    <rect x="470" y="40.8" width="118" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="529" y="57.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Parse Body</text>
-    <rect x="474.3" y="123.6" width="109.4" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="529" y="140" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Transform</text>
-    <rect x="487.2" y="206.4" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="529" y="222.8" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Enrich</text>
-    <rect x="654" y="111.2" width="100.8" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="704.4" y="127.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Response</text>
+    <rect x="142.2" y="0" width="193" height="255.2" rx="5" ry="5" fill="#ecf2dc99" stroke="#a8ae8e" stroke-width="1" />
+    <text x="150.2" y="12" text-anchor="start" dominant-baseline="central" font-size="13px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333" font-weight="bold">Authentication</text>
+    <rect x="385.2" y="0" width="150" height="255.2" rx="5" ry="5" fill="#ecf2dc99" stroke="#a8ae8e" stroke-width="1" />
+    <text x="393.2" y="12" text-anchor="start" dominant-baseline="central" font-size="13px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333" font-weight="bold">Processing</text>
+    <path d="M92.2 127.6 L96.37 127.6 C100.53 127.6 108.87 127.6 117.2 127.6 C125.53 127.6 133.87 127.6 138.03 127.6 L139.8 127.6" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M335.2 127.6 L339.37 127.6 C343.53 127.6 351.87 127.6 360.2 127.6 C368.53 127.6 376.87 127.6 381.03 127.6 L382.8 127.6" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M535.2 127.6 L539.37 127.6 C543.53 127.6 551.87 127.6 560.2 127.6 C568.53 127.6 576.87 127.6 581.03 127.6 L582.8 127.6" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M460.2 73.6 L460.2 77.77 C460.2 81.93 460.2 90.27 460.2 98.6 C460.2 106.93 460.2 115.27 460.2 119.43 L460.2 121.2" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M460.2 156.4 L460.2 160.57 C460.2 164.73 460.2 173.07 460.2 181.4 C460.2 189.73 460.2 198.07 460.2 202.23 L460.2 204" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M238.7 73.6 L238.7 77.77 C238.7 81.93 238.7 90.27 238.7 98.6 C238.7 106.93 238.7 115.27 238.7 119.43 L238.7 121.2" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M238.7 156.4 L238.7 160.57 C238.7 164.73 238.7 173.07 238.7 181.4 C238.7 189.73 238.7 198.07 238.7 202.23 L238.7 204" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <rect x="0" y="111.2" width="92.2" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="46.1" y="127.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Request</text>
+    <rect x="175.4" y="40.8" width="126.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="238.7" y="57.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Check Token</text>
+    <rect x="158.2" y="123.6" width="161" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="238.7" y="140" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Validate Claims</text>
+    <rect x="184" y="206.4" width="109.4" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="238.7" y="222.8" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Authorize</text>
+    <rect x="401.2" y="40.8" width="118" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="460.2" y="57.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Parse Body</text>
+    <rect x="405.5" y="123.6" width="109.4" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="460.2" y="140" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Transform</text>
+    <rect x="418.4" y="206.4" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="460.2" y="222.8" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Enrich</text>
+    <rect x="585.2" y="111.2" width="100.8" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="635.6" y="127.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Response</text>
   </g>
 </svg>

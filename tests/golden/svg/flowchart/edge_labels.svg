@@ -34,7 +34,7 @@
     <text x="91.2" y="215.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Ship</text>
     <rect x="271.05" y="199.2" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
     <text x="312.85" y="215.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Cancel</text>
-    <rect x="-0" y="298.8" width="109.4" height="32.8" rx="16.4" ry="16.4" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <rect x="0" y="298.8" width="109.4" height="32.8" rx="16.4" ry="16.4" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
     <text x="54.7" y="315.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Delivered</text>
     <rect x="303.25" y="298.8" width="100.8" height="32.8" rx="16.4" ry="16.4" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
     <text x="353.65" y="315.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Refunded</text>

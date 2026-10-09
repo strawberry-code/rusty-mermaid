@@ -22,7 +22,7 @@
     <path d="M75.19 99.6 L76.31 94.03 C77.43 88.47 79.66 77.33 79.66 66.2 C79.66 55.07 77.43 43.93 76.31 38.37 L75.67 35.15" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
     <rect x="59.47" y="55" width="44.86" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
     <text x="81.9" y="66.2" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">error</text>
-    <rect x="-0" y="0" width="143.8" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <rect x="0" y="0" width="143.8" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
     <text x="71.9" y="16.4" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">State Machine</text>
     <rect x="30.1" y="99.6" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
     <text x="71.9" y="116" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Output</text>

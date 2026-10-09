@@ -5,8 +5,8 @@
     </marker>
   </defs>
   <g transform="translate(20, 20)">
-    <rect x="370.32" y="334.8" width="1122.8" height="82.8" rx="5" ry="5" fill="#ecf2dc99" stroke="#a8ae8e" stroke-width="1" />
-    <text x="378.32" y="346.8" text-anchor="start" dominant-baseline="central" font-size="13px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333" font-weight="bold">Invalidation</text>
+    <rect x="370.33" y="334.8" width="1122.8" height="82.8" rx="5" ry="5" fill="#ecf2dc99" stroke="#a8ae8e" stroke-width="1" />
+    <text x="378.33" y="346.8" text-anchor="start" dominant-baseline="central" font-size="13px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333" font-weight="bold">Invalidation</text>
     <path d="M92.6 32.8 L92.6 36.97 C92.6 41.13 92.6 49.47 92.6 57.8 C92.6 66.13 92.6 74.47 92.6 78.63 L92.6 80.4" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
     <path d="M92.6 268 L92.6 273.57 C92.6 279.13 92.6 290.27 92.6 301.4 C92.6 312.53 92.6 323.67 92.6 333.4 C92.6 343.13 92.6 351.47 92.6 355.63 L92.6 357.4" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
     <rect x="77.54" y="323.6" width="30.11" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
@@ -54,7 +54,7 @@
     <path d="M588.48 392.6 L601.07 396.77 C613.67 400.93 638.86 409.27 651.45 417.6 C664.05 425.93 664.05 434.27 641.3 451.86 C618.55 469.45 573.04 496.29 550.29 509.71 L529.6 521.92" fill="none" stroke="#333333" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#arrow-point-333333)" />
     <rect x="16.4" y="0" width="152.4" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
     <text x="92.6" y="16.4" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Client Browser</text>
-    <polygon points="92.6,82.8 185.2,175.4 92.6,268 -0,175.4" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <polygon points="92.6,82.8 185.2,175.4 92.6,268 0,175.4" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
     <text x="92.6" y="175.4" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">CDN Cache Hit?</text>
     <rect x="16.4" y="359.8" width="152.4" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
     <text x="92.6" y="376.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Serve from CDN</text>
