@@ -18,7 +18,7 @@
     <text x="132.5" y="351" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Component</text>
     <path d="M60 363 L205 363" fill="none" stroke="#9370db" stroke-width="1" />
     <path d="M132.5 380 L132.5 384.17 C132.5 388.33 132.5 396.67 132.5 405 C132.5 413.33 132.5 421.67 132.5 425.83 L132.5 427.6" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M142.9 462.8 L145.54 466.97 C148.18 471.13 153.47 479.47 153.47 487.8 C153.47 496.13 148.18 504.47 145.54 508.63 L144.18 510.77" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M122.1 462.8 L119.46 466.97 C116.82 471.13 111.53 479.47 111.53 487.8 C111.53 496.13 116.82 504.47 119.46 508.63 L120.82 510.77" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
     <path d="M132.5 545.6 L132.5 549.77 C132.5 553.93 132.5 562.27 132.5 570.6 C132.5 578.93 132.5 587.27 132.5 591.43 L132.5 593.2" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
     <path d="M132.5 289 L132.5 293.17 C132.5 297.33 132.5 305.67 132.5 314 C132.5 322.33 132.5 330.67 132.5 336.6" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
     <path d="M132.5 636.6 C132.5 644.93 132.5 653.27 132.5 661.6 C132.5 669.93 132.5 678.27 132.5 682.43 L132.5 684.2" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
@@ -28,7 +28,7 @@
     <path d="M132.5 818.6 C132.5 826.93 132.5 835.27 132.5 843.6 C132.5 851.93 132.5 860.27 132.5 864.43 L132.5 866.2" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
     <path d="M132.5 16 L132.5 20.17 C132.5 24.33 132.5 32.67 132.5 41 C132.5 49.33 132.5 57.67 132.5 63.6" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
     <path d="M132.5 909.6 C132.5 909.6 132.5 909.6 132.5 909.6 C132.5 917.93 132.5 926.27 132.5 934.6 C132.5 942.93 132.5 951.27 132.5 955.43 L132.5 957.2" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M122.1 512.8 L119.46 508.63 C116.82 504.47 111.53 496.13 111.53 487.8 C111.53 479.47 116.82 471.13 119.46 466.97 L120.82 464.83" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M142.9 512.8 L145.54 508.63 C148.18 504.47 153.47 496.13 153.47 487.8 C153.47 479.47 148.18 471.13 145.54 466.97 L144.18 464.83" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
     <rect x="99.3" y="512.8" width="66.4" height="32.8" rx="5" ry="5" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
     <text x="132.5" y="529.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Busy</text>
     <circle cx="132.5" cy="603.6" r="8" fill="none" stroke="#9370db" stroke-width="1.5" />

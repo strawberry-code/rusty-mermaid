@@ -63,7 +63,7 @@ pub fn layout(graph: &mut Graph<NodeLabel, EdgeLabel>, config: &DagreConfig) {
     border_segments::add_border_segments(graph);
     border_segments::extend_rank_min_max(graph);
 
-    order::order(graph);
+    order::order(graph, cfg.accept_equal_sweeps);
 
     self_edges::insert_self_edges(graph);
     coord_system::adjust(graph, cfg.rankdir);

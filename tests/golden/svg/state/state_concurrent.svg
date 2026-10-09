@@ -18,8 +18,8 @@
     <path d="M618.8 280.8 L608.95 286.37 C599.1 291.93 579.41 303.07 579.41 314.2 C579.41 325.33 599.1 336.47 608.95 342.03 L616.71 346.42" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
     <rect x="512.75" y="303" width="133.31" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
     <text x="579.41" y="314.2" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">EvCapsLockPressed</text>
-    <path d="M431.88 16 L431.88 20.17 C431.88 24.33 431.88 32.67 431.88 41 C431.88 49.09 431.88 57.19 431.88 63.6" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M431.88 496.4 C431.88 505.21 431.88 513.31 431.88 521.4 C431.88 529.73 431.88 538.07 431.88 542.23 L431.88 544" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M431.88 16 L431.88 20.17 C431.88 24.33 431.88 32.67 431.88 41 C431.88 49.08 431.88 57.17 431.88 63.6" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M431.88 496.4 C431.88 505.23 431.88 513.32 431.88 521.4 C431.88 529.73 431.88 538.07 431.88 542.23 L431.88 544" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
     <path d="M243.53 347.6 L252.9 342.03 C262.27 336.47 281 325.33 281 314.2 C281 303.07 262.27 291.93 252.9 286.37 L245.6 282.03" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
     <rect x="218.03" y="303" width="125.94" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
     <text x="281" y="314.2" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">EvNumLockPressed</text>

@@ -5,14 +5,14 @@
     </marker>
   </defs>
   <g transform="translate(20, 20)">
-    <path d="M57.01 32.8 L60.88 36.97 C64.74 41.13 72.47 49.47 76.34 57.8 C80.2 66.13 80.2 74.47 80.2 78.63 L80.2 80.4" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M80.2 115.6 L80.2 119.77 C80.2 123.93 80.2 132.27 76.34 140.6 C72.47 148.93 64.74 157.27 60.88 161.43 L58.64 163.84" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M26.59 165.6 L22.72 161.43 C18.86 157.27 11.13 148.93 7.26 137.87 C3.4 126.8 3.4 113 3.4 99.2 C3.4 85.4 3.4 71.6 7.26 60.53 C11.13 49.47 18.86 41.13 22.72 36.97 L24.96 34.56" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <rect x="-0" y="0" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="41.8" y="16.4" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Step 1</text>
-    <rect x="38.4" y="82.8" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="80.2" y="99.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Step 2</text>
-    <rect x="-0" y="165.6" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="41.8" y="182" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Step 3</text>
+    <path d="M64.99 32.8 L61.12 36.97 C57.26 41.13 49.53 49.47 45.66 57.8 C41.8 66.13 41.8 74.47 41.8 78.63 L41.8 80.4" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M41.8 115.6 L41.8 119.77 C41.8 123.93 41.8 132.27 45.66 140.6 C49.53 148.93 57.26 157.27 61.12 161.43 L63.36 163.84" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M95.41 165.6 L99.28 161.43 C103.14 157.27 110.87 148.93 114.74 137.87 C118.6 126.8 118.6 113 118.6 99.2 C118.6 85.4 118.6 71.6 114.74 60.53 C110.87 49.47 103.14 41.13 99.28 36.97 L97.04 34.56" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <rect x="38.4" y="0" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="80.2" y="16.4" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Step 1</text>
+    <rect x="0" y="82.8" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="41.8" y="99.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Step 2</text>
+    <rect x="38.4" y="165.6" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="80.2" y="182" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Step 3</text>
   </g>
 </svg>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 997.84 371.6" width="997.84" height="371.6">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 975.44 371.6" width="975.44" height="371.6">
   <defs>
     <marker id="arrow-point-333333" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
       <path d="M10 5 L0 10 L4 5 L0 0 Z" fill="#333333" />
@@ -11,56 +11,56 @@
     </marker>
   </defs>
   <g transform="translate(20, 20)">
-    <path d="M484.17 20.89 L554.46 28.44 C624.75 35.99 765.34 51.1 835.63 64.22 C905.92 77.33 905.92 88.47 905.92 94.03 L905.92 97.2" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <rect x="857.69" y="55" width="96.46" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
-    <text x="905.92" y="66.2" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">normal arrow</text>
-    <path d="M484.17 23.78 L524.23 30.85 C564.29 37.92 644.4 52.06 684.46 67.43 C724.52 82.8 724.52 99.4 724.52 116 C724.52 132.6 724.52 149.2 735.11 163.07 C745.7 176.93 766.89 188.07 777.48 193.63 L783.11 196.59" fill="none" stroke="#333333" stroke-width="3.5" marker-end="url(#arrow-point-333333)" />
-    <rect x="679.98" y="104.8" width="89.09" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
-    <text x="724.52" y="116" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">thick arrow</text>
-    <path d="M469.41 32.8 L478.59 38.37 C487.76 43.93 506.12 55.07 515.29 66.2 C524.47 77.33 524.47 88.47 524.47 94.03 L524.47 97.2" fill="none" stroke="#333333" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#arrow-point-333333)" />
-    <rect x="476.24" y="55" width="96.46" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
-    <text x="524.47" y="66.2" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">dotted arrow</text>
-    <path d="M404.04 32.8 L391.03 38.37 C378.02 43.93 351.99 55.07 338.98 68.93 C325.97 82.8 325.97 99.4 325.97 116 C325.97 132.6 325.97 149.2 353.52 164.41 C381.07 179.62 436.17 193.45 463.72 200.36 L491.27 207.27" fill="none" stroke="#333333" stroke-width="1.5" />
-    <rect x="285.11" y="104.8" width="81.71" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
-    <text x="325.97" y="116" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">open solid</text>
-    <path d="M400.57 25.04 L367.37 31.9 C334.17 38.76 267.77 52.48 234.57 64.91 C201.37 77.33 201.37 88.47 201.37 94.03 L201.37 97.2" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#marker-circle-333333)" />
-    <rect x="160.51" y="55" width="81.71" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
-    <text x="201.37" y="66.2" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">circle end</text>
-    <path d="M400.57 21.54 L340 28.98 C279.44 36.42 158.3 51.31 97.74 67.06 C37.17 82.8 37.17 99.4 37.17 116 C37.17 132.6 37.17 149.2 46.35 163.07 C55.53 176.93 73.88 188.07 83.06 193.63 L90.18 197.96" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#marker-cross-333333)" />
-    <rect x="0" y="104.8" width="74.34" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
-    <text x="37.17" y="116" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">cross end</text>
-    <path d="M905.92 134.8 L905.92 137.97 C905.92 143.53 905.92 154.67 896.24 165.8 C886.55 176.93 867.18 188.07 857.49 193.63 L849.89 198" fill="none" stroke="#333333" stroke-width="1.5" marker-start="url(#arrow-point-333333)" marker-end="url(#arrow-point-333333)" />
-    <rect x="854.01" y="154.6" width="103.83" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
-    <text x="905.92" y="165.8" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">bidirectional</text>
-    <path d="M548.41 133.83 L553.96 137.97 C561.43 143.53 576.38 154.67 576.38 165.8 C576.38 176.93 561.43 188.07 553.96 193.63 L548.41 197.77" fill="none" stroke="#333333" stroke-width="1.5" marker-start="url(#marker-circle-333333)" marker-end="url(#marker-circle-333333)" />
-    <rect x="543.09" y="154.6" width="96.46" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
-    <text x="591.32" y="165.8" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">bidir circle</text>
-    <path d="M201.37 134.8 L201.37 137.97 C201.37 143.53 201.37 154.67 192.19 165.8 C183.02 176.93 164.66 188.07 155.49 193.63 L148.36 197.96" fill="none" stroke="#333333" stroke-width="1.5" marker-start="url(#marker-cross-333333)" marker-end="url(#marker-cross-333333)" />
-    <rect x="156.83" y="154.6" width="89.09" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
-    <text x="201.37" y="165.8" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">bidir cross</text>
-    <path d="M819.27 232 L819.27 237.57 C819.27 243.13 819.27 254.27 819.27 265.4 C819.27 276.53 819.27 287.67 819.27 293.2" fill="none" stroke="#333333" stroke-width="3.5" marker-end="url(#arrow-point-333333)" />
-    <rect x="774.73" y="254.2" width="89.09" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
-    <text x="819.27" y="265.4" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">thick label</text>
-    <path d="M493.99 132.4 L483.65 137.97 C473.3 143.53 452.61 154.67 434.79 165.8 C416.98 176.93 402.03 188.07 394.56 193.63 L389.01 197.77" fill="none" stroke="#333333" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#arrow-point-333333)" />
-    <rect x="383.69" y="154.6" width="96.46" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
-    <text x="431.92" y="165.8" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">dotted label</text>
-    <rect x="400.57" y="0" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="442.37" y="16.4" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Center</text>
-    <rect x="864.12" y="99.6" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="905.92" y="116" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Normal</text>
-    <rect x="781.77" y="199.2" width="75" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="819.27" y="215.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Thick</text>
-    <rect x="482.67" y="99.6" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="524.47" y="116" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Dotted</text>
-    <rect x="491.27" y="199.2" width="66.4" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="524.47" y="215.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Open</text>
-    <rect x="159.57" y="99.6" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="201.37" y="116" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Circle</text>
-    <rect x="81.77" y="199.2" width="75" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="119.27" y="215.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Cross</text>
-    <rect x="747.37" y="298.8" width="143.8" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="819.27" y="315.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Labeled Thick</text>
-    <rect x="288.87" y="199.2" width="152.4" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="365.07" y="215.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Labeled Dotted</text>
+    <path d="M399.91 21.74 L341.91 29.15 C283.91 36.56 167.91 51.38 109.91 64.36 C51.91 77.33 51.91 88.47 51.91 94.03 L51.91 97.2" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <rect x="3.69" y="55" width="96.46" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
+    <text x="51.91" y="66.2" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">normal arrow</text>
+    <path d="M399.91 24.79 L365.55 31.69 C331.18 38.6 262.45 52.4 228.08 67.6 C193.71 82.8 193.71 99.4 193.71 116 C193.71 132.6 193.71 149.2 181.71 163.07 C169.7 176.93 145.69 188.07 133.69 193.63 L126.76 196.84" fill="none" stroke="#333333" stroke-width="3.5" marker-end="url(#arrow-point-333333)" />
+    <rect x="149.17" y="104.8" width="89.09" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
+    <text x="193.71" y="116" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">thick arrow</text>
+    <path d="M419.78 32.8 L412.34 38.37 C404.89 43.93 390 55.07 382.56 66.2 C375.11 77.33 375.11 88.47 375.11 94.03 L375.11 97.2" fill="none" stroke="#333333" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#arrow-point-333333)" />
+    <rect x="326.89" y="55" width="96.46" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
+    <text x="375.11" y="66.2" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">dotted arrow</text>
+    <path d="M483.51 29.48 L503.07 35.6 C522.63 41.72 561.75 53.96 581.31 68.38 C600.86 82.8 600.86 99.4 600.86 116 C600.86 132.6 600.86 149.2 568.77 164.58 C536.68 179.96 472.5 194.12 440.41 201.2 L408.31 208.28" fill="none" stroke="#333333" stroke-width="1.5" />
+    <rect x="560.01" y="104.8" width="81.71" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
+    <text x="600.86" y="116" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">open solid</text>
+    <path d="M483.51 22.67 L531.87 29.93 C580.23 37.18 676.95 51.69 725.31 64.51 C773.66 77.33 773.66 88.47 773.66 94.03 L773.66 97.2" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#marker-circle-333333)" />
+    <rect x="732.81" y="55" width="81.71" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
+    <text x="773.66" y="66.2" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">circle end</text>
+    <path d="M483.51 20.96 L552.64 28.5 C621.76 36.04 760.01 51.12 829.14 66.96 C898.26 82.8 898.26 99.4 898.26 116 C898.26 132.6 898.26 149.2 891.3 163.07 C884.34 176.93 870.41 188.07 863.44 193.63 L858.36 197.7" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#marker-cross-333333)" />
+    <rect x="861.09" y="104.8" width="74.34" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
+    <text x="898.26" y="116" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">cross end</text>
+    <path d="M51.91 134.8 L51.91 137.97 C51.91 143.53 51.91 154.67 55.76 165.8 C59.6 176.93 67.3 188.07 71.14 193.63 L73.62 197.23" fill="none" stroke="#333333" stroke-width="1.5" marker-start="url(#arrow-point-333333)" marker-end="url(#arrow-point-333333)" />
+    <rect x="0" y="154.6" width="103.83" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
+    <text x="51.91" y="165.8" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">bidirectional</text>
+    <path d="M351.17 133.83 L345.63 137.97 C338.15 143.53 323.21 154.67 323.21 165.8 C323.21 176.93 338.15 188.07 345.63 193.63 L351.17 197.77" fill="none" stroke="#333333" stroke-width="1.5" marker-start="url(#marker-circle-333333)" marker-end="url(#marker-circle-333333)" />
+    <rect x="260.04" y="154.6" width="96.46" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
+    <text x="308.26" y="165.8" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">bidir circle</text>
+    <path d="M773.66 134.8 L773.66 137.97 C773.66 143.53 773.66 154.67 780.63 165.8 C787.59 176.93 801.52 188.07 808.48 193.63 L813.57 197.7" fill="none" stroke="#333333" stroke-width="1.5" marker-start="url(#marker-cross-333333)" marker-end="url(#marker-cross-333333)" />
+    <rect x="729.12" y="154.6" width="89.09" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
+    <text x="773.66" y="165.8" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">bidir cross</text>
+    <path d="M86.31 232 L86.31 237.57 C86.31 243.13 86.31 254.27 86.31 265.4 C86.31 276.53 86.31 287.67 86.31 293.2" fill="none" stroke="#333333" stroke-width="3.5" marker-end="url(#arrow-point-333333)" />
+    <rect x="41.77" y="254.2" width="89.09" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
+    <text x="86.31" y="265.4" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">thick label</text>
+    <path d="M405.59 132.4 L415.94 137.97 C426.28 143.53 446.97 154.67 464.79 165.8 C482.61 176.93 497.55 188.07 505.03 193.63 L510.57 197.77" fill="none" stroke="#333333" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#arrow-point-333333)" />
+    <rect x="419.44" y="154.6" width="96.46" height="22.4" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
+    <text x="467.66" y="165.8" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">dotted label</text>
+    <rect x="399.91" y="0" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="441.71" y="16.4" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Center</text>
+    <rect x="10.11" y="99.6" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="51.91" y="116" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Normal</text>
+    <rect x="48.81" y="199.2" width="75" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="86.31" y="215.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Thick</text>
+    <rect x="333.31" y="99.6" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="375.11" y="116" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Dotted</text>
+    <rect x="341.91" y="199.2" width="66.4" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="375.11" y="215.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Open</text>
+    <rect x="731.86" y="99.6" width="83.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="773.66" y="116" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Circle</text>
+    <rect x="798.46" y="199.2" width="75" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="835.96" y="215.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Cross</text>
+    <rect x="14.41" y="298.8" width="143.8" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="86.31" y="315.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Labeled Thick</text>
+    <rect x="458.31" y="199.2" width="152.4" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="534.51" y="215.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Labeled Dotted</text>
   </g>
 </svg>

@@ -5,16 +5,16 @@
     </marker>
   </defs>
   <g transform="translate(20, 20)">
-    <path d="M162.94 32.8 L167.5 36.97 C172.06 41.13 181.18 49.47 185.74 57.8 C190.3 66.13 190.3 74.47 190.3 78.63 L190.3 80.4" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
     <path d="M127.06 32.8 L122.5 36.97 C117.94 41.13 108.82 49.47 104.26 57.8 C99.7 66.13 99.7 74.47 99.7 78.63 L99.7 80.4" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M190.3 115.6 L190.3 119.77 C190.3 123.93 190.3 132.27 185.74 140.6 C181.18 148.93 172.06 157.27 167.5 161.43 L164.72 163.98" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M162.94 32.8 L167.5 36.97 C172.06 41.13 181.18 49.47 185.74 57.8 C190.3 66.13 190.3 74.47 190.3 78.63 L190.3 80.4" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
     <path d="M99.7 115.6 L99.7 119.77 C99.7 123.93 99.7 132.27 104.26 140.6 C108.82 148.93 117.94 157.27 122.5 161.43 L125.28 163.98" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M190.3 115.6 L190.3 119.77 C190.3 123.93 190.3 132.27 185.74 140.6 C181.18 148.93 172.06 157.27 167.5 161.43 L164.72 163.98" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
     <rect x="0" y="0" width="290" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
     <text x="145" y="16.4" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">This is a very wide node label</text>
-    <rect x="170" y="82.8" width="40.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="190.3" y="99.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">S</text>
     <rect x="79.4" y="82.8" width="40.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
     <text x="99.7" y="99.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">S</text>
+    <rect x="170" y="82.8" width="40.6" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="190.3" y="99.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">S</text>
     <rect x="55.9" y="165.6" width="178.2" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
     <text x="145" y="182" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Medium label here</text>
   </g>

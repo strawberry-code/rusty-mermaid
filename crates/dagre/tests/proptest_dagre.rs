@@ -137,7 +137,7 @@ proptest! {
     fn order_produces_valid_layer_permutations(mut g in arb_graph(12, 20)) {
         rusty_mermaid_dagre::acyclic::run(&mut g, Acyclicer::Dfs);
         rusty_mermaid_dagre::rank::rank(&mut g, Ranker::NetworkSimplex);
-        rusty_mermaid_dagre::order::order(&mut g);
+        rusty_mermaid_dagre::order::order(&mut g, true);
 
         // Group nodes by rank
         let mut by_rank: HashMap<i32, Vec<usize>> = HashMap::new();

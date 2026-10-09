@@ -50,6 +50,10 @@ pub struct DagreConfig {
     pub ranker: Ranker,
     pub rankalign: RankAlign,
     pub align: Option<Align>,
+    /// Nell'ordinamento, una passata con lo stesso numero di incroci sostituisce
+    /// la migliore. Mermaid (dagre-d3-es) tiene la prima: con `false` i fratelli
+    /// senza vincoli restano nell'ordine del sorgente.
+    pub accept_equal_sweeps: bool,
 }
 
 impl Default for DagreConfig {
@@ -65,6 +69,7 @@ impl Default for DagreConfig {
             ranker: Ranker::default(),
             rankalign: RankAlign::default(),
             align: None,
+            accept_equal_sweeps: false,
         }
     }
 }

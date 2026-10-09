@@ -123,6 +123,7 @@ fn run_golden(golden: &GoldenFile) -> LayoutResult {
     config.rankdir = parse_rankdir(&golden.config.rankdir);
     config.nodesep = golden.config.nodesep;
     config.ranksep = golden.config.ranksep;
+    config.accept_equal_sweeps = true; // i riferimenti vengono da dagre.js 1.x
 
     // Run pipeline
     rusty_mermaid_dagre::pipeline::layout(&mut g, &config);

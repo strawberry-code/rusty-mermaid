@@ -21,7 +21,7 @@ use crate::util;
 /// which compound siblings appeared left-of-right, so subsequent ranks
 /// respect the same relative order — preventing subgraph bounding boxes
 /// from overlapping.
-pub fn order(graph: &mut Graph<NodeLabel, EdgeLabel>) {
+pub fn order(graph: &mut Graph<NodeLabel, EdgeLabel>, accept_equal_sweeps: bool) {
     let _layering = init_order::init_order(graph);
 
     let max = util::max_rank(graph);
@@ -65,8 +65,9 @@ pub fn order(graph: &mut Graph<NodeLabel, EdgeLabel>) {
                 .node_ids()
                 .filter_map(|nid| Some((nid, graph.node(nid)?.order)))
                 .collect();
-        } else if (cc - best_cc).abs() < f64::EPSILON {
-            // Equal cost: accept new ordering (matches JS dagre)
+        } else if accept_equal_sweeps && (cc - best_cc).abs() < f64::EPSILON {
+            // Parità di costo: dagre.js 1.x accetta il nuovo ordine, dagre-d3-es
+            // (quello di Mermaid) tiene il primo.
             best_orders = graph
                 .node_ids()
                 .filter_map(|nid| Some((nid, graph.node(nid)?.order)))
@@ -214,6 +215,25 @@ mod tests {
     use super::*;
 
     #[test]
+    fn fan_out_keeps_source_order_like_mermaid() {
+        let mut g = Graph::new();
+        let a = g.add_node(NodeLabel::new(10.0, 10.0));
+        let kids: Vec<_> = (0..3)
+            .map(|_| g.add_node(NodeLabel::new(10.0, 10.0)))
+            .collect();
+        g.node_mut(a).unwrap().rank = 0;
+        for &k in &kids {
+            g.add_edge(a, k, EdgeLabel::default());
+            g.node_mut(k).unwrap().rank = 1;
+        }
+
+        order(&mut g, false);
+
+        let orders: Vec<_> = kids.iter().map(|&k| g.node(k).unwrap().order).collect();
+        assert_eq!(orders, vec![0, 1, 2]);
+    }
+
+    #[test]
     fn linear_chain_no_crossings() {
         let mut g = Graph::new();
         let a = g.add_node(NodeLabel::new(10.0, 10.0));
@@ -225,7 +245,7 @@ mod tests {
         g.node_mut(b).unwrap().rank = 1;
         g.node_mut(c).unwrap().rank = 2;
 
-        order(&mut g);
+        order(&mut g, true);
 
         let layering = util::build_layer_matrix(&g);
         let cc = cross_count::cross_count(&g, &layering);
@@ -258,7 +278,7 @@ mod tests {
         let initial_cc = cross_count::cross_count(&g, &initial_layering);
         assert_eq!(initial_cc, 1.0);
 
-        order(&mut g);
+        order(&mut g, true);
 
         let layering = util::build_layer_matrix(&g);
         let cc = cross_count::cross_count(&g, &layering);
@@ -277,7 +297,7 @@ mod tests {
         g.node_mut(b).unwrap().rank = 1;
         g.node_mut(c).unwrap().rank = 1;
 
-        order(&mut g);
+        order(&mut g, true);
 
         // b and c should have different orders
         assert_ne!(g.node(b).unwrap().order, g.node(c).unwrap().order);
@@ -289,7 +309,7 @@ mod tests {
         let a = g.add_node(NodeLabel::new(10.0, 10.0));
         g.node_mut(a).unwrap().rank = 0;
 
-        order(&mut g);
+        order(&mut g, true);
         assert_eq!(g.node(a).unwrap().order, 0);
     }
 }

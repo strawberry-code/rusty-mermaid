@@ -5,13 +5,13 @@
     </marker>
   </defs>
   <g transform="translate(20, 20)">
-    <path d="M129.46 32.8 L136.4 36.97 C143.34 41.13 157.22 49.47 164.16 57.8 C171.1 66.13 171.1 74.47 171.1 78.63 L171.1 80.4" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M74.84 32.8 L67.9 36.97 C60.96 41.13 47.08 49.47 40.14 57.8 C33.2 66.13 33.2 74.47 33.2 78.63 L33.2 80.4" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <rect x="73.25" y="0" width="57.8" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="102.15" y="16.4" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Top</text>
-    <rect x="116.4" y="82.8" width="109.4" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="171.1" y="99.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Far Below</text>
-    <rect x="0" y="82.8" width="66.4" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="33.2" y="99.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Near</text>
+    <path d="M96.34 32.8 L89.4 36.97 C82.46 41.13 68.58 49.47 61.64 57.8 C54.7 66.13 54.7 74.47 54.7 78.63 L54.7 80.4" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M150.96 32.8 L157.9 36.97 C164.84 41.13 178.72 49.47 185.66 57.8 C192.6 66.13 192.6 74.47 192.6 78.63 L192.6 80.4" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <rect x="94.75" y="0" width="57.8" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="123.65" y="16.4" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Top</text>
+    <rect x="-0" y="82.8" width="109.4" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="54.7" y="99.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Far Below</text>
+    <rect x="159.4" y="82.8" width="66.4" height="32.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="192.6" y="99.2" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Near</text>
   </g>
 </svg>

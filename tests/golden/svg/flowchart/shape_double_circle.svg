@@ -5,24 +5,24 @@
     </marker>
   </defs>
   <g transform="translate(20, 20)">
-    <path d="M170.15 50.83 L191.71 59.02 C213.27 67.22 256.38 83.61 277.94 95.97 C299.5 108.33 299.5 116.67 299.5 120.83 L299.5 122.6" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M135.1 75 L135.1 79.17 C135.1 83.33 135.1 91.67 135.1 105.13 C135.1 118.6 135.1 137.2 135.1 146.5 L135.1 153.4" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M159.96 231.2 L167.85 241.87 C175.74 252.54 191.52 273.87 205.32 291.55 C219.11 309.22 230.92 323.25 236.83 330.26 L241.19 335.43" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M299.5 270.2 L299.5 274.37 C299.5 278.53 299.5 286.87 299.07 295.26 C298.63 303.66 297.77 312.12 297.33 316.35 L297.14 318.19" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M123.42 237.74 L120.63 247.31 C117.85 256.89 112.27 276.05 107.25 291.3 C102.24 306.55 97.77 317.89 95.54 323.57 L94.18 327.01" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <path d="M61.34 324.86 L60.83 319.91 C60.33 314.97 59.31 305.09 58.81 283.88 C58.3 262.67 58.3 230.13 58.3 197.6 C58.3 165.07 58.3 132.53 66.25 109.8 C74.2 87.06 90.11 74.11 98.06 67.64 L104.15 62.68" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
-    <circle cx="135.1" cy="37.5" r="37.5" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="135.1" y="37.5" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Start</text>
-    <circle cx="299.5" cy="197.6" r="72.6" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <circle cx="299.5" cy="197.6" r="67.6" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="299.5" y="197.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Accept State</text>
-    <circle cx="135.1" cy="197.6" r="41.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="135.1" y="197.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Normal</text>
-    <circle cx="289.5" cy="392.8" r="72.6" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <circle cx="289.5" cy="392.8" r="67.6" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="289.5" y="392.8" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Final Accept</text>
-    <circle cx="68.3" cy="392.8" r="68.3" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <circle cx="68.3" cy="392.8" r="63.3" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
-    <text x="68.3" y="392.8" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Error State</text>
+    <path d="M201.95 50.83 L180.39 59.02 C158.83 67.22 115.72 83.61 94.16 95.97 C72.6 108.33 72.6 116.67 72.6 120.83 L72.6 122.6" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M237 75 L237 79.17 C237 83.33 237 91.67 237 105.13 C237 118.6 237 137.2 237 146.5 L237 153.4" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M212.14 231.2 L204.25 241.87 C196.36 252.54 180.58 273.87 166.78 291.55 C152.99 309.22 141.18 323.25 135.27 330.26 L130.91 335.43" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M72.6 270.2 L72.6 274.37 C72.6 278.53 72.6 286.87 73.03 295.26 C73.47 303.66 74.33 312.12 74.77 316.35 L74.96 318.19" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M248.68 237.74 L251.47 247.31 C254.25 256.89 259.83 276.05 264.85 291.3 C269.86 306.55 274.33 317.89 276.56 323.57 L277.92 327.01" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <path d="M310.76 324.86 L311.27 319.91 C311.77 314.97 312.79 305.09 313.29 283.88 C313.8 262.67 313.8 230.13 313.8 197.6 C313.8 165.07 313.8 132.53 305.85 109.8 C297.9 87.06 281.99 74.11 274.04 67.64 L267.95 62.68" fill="none" stroke="#333333" stroke-width="1.5" marker-end="url(#arrow-point-333333)" />
+    <circle cx="237" cy="37.5" r="37.5" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="237" y="37.5" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Start</text>
+    <circle cx="72.6" cy="197.6" r="72.6" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <circle cx="72.6" cy="197.6" r="67.6" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="72.6" y="197.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Accept State</text>
+    <circle cx="237" cy="197.6" r="41.8" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="237" y="197.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Normal</text>
+    <circle cx="82.6" cy="392.8" r="72.6" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <circle cx="82.6" cy="392.8" r="67.6" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="82.6" y="392.8" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Final Accept</text>
+    <circle cx="303.8" cy="392.8" r="68.3" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <circle cx="303.8" cy="392.8" r="63.3" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />
+    <text x="303.8" y="392.8" text-anchor="middle" dominant-baseline="central" font-size="14px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">Error State</text>
   </g>
 </svg>
