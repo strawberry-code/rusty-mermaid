@@ -483,18 +483,19 @@ fn parse_arrow(input: &mut &str) -> ModalResult<ArrowStyle> {
     alt((
         "-->>".value(ArrowStyle::DOTTED_FILLED),
         "--x".value(ArrowStyle::DOTTED_CROSS),
-        "--)".value(ArrowStyle {
+        // `--)` è l'asincrono di Mermaid: punta aperta. `-->` è una linea senza punta.
+        "--)".value(ArrowStyle::DOTTED_OPEN),
+        "-->".value(ArrowStyle {
             line: LineStyle::Dotted,
             head: ArrowHead::None,
         }),
-        "-->".value(ArrowStyle::DOTTED_OPEN),
         "->>".value(ArrowStyle::SOLID_FILLED),
         "-x".value(ArrowStyle::SOLID_CROSS),
-        "-)".value(ArrowStyle {
+        "-)".value(ArrowStyle::SOLID_OPEN),
+        "->".value(ArrowStyle {
             line: LineStyle::Solid,
             head: ArrowHead::None,
         }),
-        "->".value(ArrowStyle::SOLID_OPEN),
     ))
     .parse_next(input)
 }

@@ -106,7 +106,8 @@ fn parse_solid_open_arrow() {
     let SequenceItem::Message(ref m) = d.items[0] else {
         panic!("expected message");
     };
-    assert_eq!(m.arrow, ArrowStyle::SOLID_OPEN);
+    assert_eq!(m.arrow.line, LineStyle::Solid);
+    assert_eq!(m.arrow.head, ArrowHead::None);
 }
 
 #[test]
@@ -124,7 +125,8 @@ fn parse_dotted_open_arrow() {
     let SequenceItem::Message(ref m) = d.items[0] else {
         panic!("expected message");
     };
-    assert_eq!(m.arrow, ArrowStyle::DOTTED_OPEN);
+    assert_eq!(m.arrow.line, LineStyle::Dotted);
+    assert_eq!(m.arrow.head, ArrowHead::None);
 }
 
 #[test]
@@ -152,7 +154,7 @@ fn parse_solid_async_arrow() {
         panic!("expected message");
     };
     assert_eq!(m.arrow.line, LineStyle::Solid);
-    assert_eq!(m.arrow.head, ArrowHead::None);
+    assert_eq!(m.arrow.head, ArrowHead::Open);
 }
 
 #[test]
@@ -162,7 +164,7 @@ fn parse_dotted_async_arrow() {
         panic!("expected message");
     };
     assert_eq!(m.arrow.line, LineStyle::Dotted);
-    assert_eq!(m.arrow.head, ArrowHead::None);
+    assert_eq!(m.arrow.head, ArrowHead::Open);
 }
 
 #[test]
