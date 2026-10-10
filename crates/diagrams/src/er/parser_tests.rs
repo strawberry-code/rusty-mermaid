@@ -201,3 +201,26 @@ fn reject_wrong_header() {
 fn reject_whitespace_only() {
     assert!(parse("   \n\n  ").is_err());
 }
+
+#[test]
+fn parse_zero_or_one_left_symbol() {
+    let d = parse("erDiagram\n    A |o--o| B : opt").unwrap();
+    assert_eq!(d.relationships.len(), 1);
+    assert_eq!(d.relationships[0].cardinality_a, Cardinality::ZeroOrOne);
+    assert_eq!(d.relationships[0].cardinality_b, Cardinality::ZeroOrOne);
+}
+
+#[test]
+fn parse_quoted_entity_name() {
+    let d = parse("erDiagram\n    \"Ent Spazio\" ||--o{ B : has").unwrap();
+    assert_eq!(d.relationships[0].entity_a, "Ent Spazio");
+    assert_eq!(d.relationships[0].entity_b, "B");
+}
+
+#[test]
+fn parallel_relations_get_distinct_edges() {
+    let d = parse("erDiagram\n    A ||--o{ B : crea\n    A ||--o{ B : possiede").unwrap();
+    let r = super::super::bridge::layout(&d);
+    assert_eq!(r.edges.len(), 2);
+    assert_ne!(r.edges[0].edge.points, r.edges[1].edge.points);
+}

@@ -128,3 +128,10 @@ fn direction_lr() {
         "LR layout: horizontal distance ({dx}) should exceed vertical ({dy})"
     );
 }
+
+#[test]
+fn parallel_relations_get_distinct_edges() {
+    let r = parse_and_layout("classDiagram\n    A --> B : crea\n    A --> B : possiede");
+    assert_eq!(r.edges.len(), 2);
+    assert_ne!(r.edges[0].edge.points, r.edges[1].edge.points);
+}

@@ -202,6 +202,7 @@ fn extract_class_edges(
     style: &TextStyle,
 ) -> Vec<ClassEdgeLayout> {
     let mut edges = Vec::new();
+    let mut done = Vec::new();
     for rel in &diagram.relationships {
         let Some(&src_nid) = id_map.get(&rel.from_id) else {
             continue;
@@ -210,11 +211,17 @@ fn extract_class_edges(
             continue;
         };
 
-        let edge_id = graph.edge_ids().find(|&eid| {
-            graph
-                .edge_endpoints(eid)
-                .is_some_and(|(s, d)| s == src_nid && d == dst_nid)
-        });
+        // Più relazioni fra la stessa coppia: la n-esima prende l'n-esimo arco.
+        let nth = done.iter().filter(|p| **p == (src_nid, dst_nid)).count();
+        done.push((src_nid, dst_nid));
+        let edge_id = graph
+            .edge_ids()
+            .filter(|&eid| {
+                graph
+                    .edge_endpoints(eid)
+                    .is_some_and(|(s, d)| s == src_nid && d == dst_nid)
+            })
+            .nth(nth);
         let Some(eid) = edge_id else { continue };
         let Some(edge_label) = graph.edge(eid) else {
             continue;

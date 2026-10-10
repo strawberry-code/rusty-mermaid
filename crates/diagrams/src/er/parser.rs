@@ -267,7 +267,7 @@ fn parse_cardinality_left(input: &mut &str) -> ModalResult<Cardinality> {
     if let Some(card) = try_text_cardinality(input) {
         return Ok(card);
     }
-    // Symbol syntax (left side): }|, }o, ||, o|
+    // Symbol syntax (left side): }|, }o, ||, |o
     if input.starts_with("}|") {
         *input = &input[2..];
         Ok(Cardinality::OneOrMore)
@@ -277,7 +277,7 @@ fn parse_cardinality_left(input: &mut &str) -> ModalResult<Cardinality> {
     } else if input.starts_with("||") {
         *input = &input[2..];
         Ok(Cardinality::ExactlyOne)
-    } else if input.starts_with("o|") {
+    } else if input.starts_with("|o") || input.starts_with("o|") {
         *input = &input[2..];
         Ok(Cardinality::ZeroOrOne)
     } else {
@@ -382,6 +382,15 @@ fn parse_direction(input: &mut &str) -> ModalResult<Direction> {
 // ── Helpers ──
 
 fn entity_identifier<'i>(input: &mut &'i str) -> ModalResult<&'i str> {
+    // Nome fra virgolette, anche con spazi: "Ent Spazio".
+    if let Some(quoted) = input.strip_prefix('"')
+        && let Some(end) = quoted.find('"')
+        && end > 0
+    {
+        let name = &quoted[..end];
+        *input = &quoted[end + 1..];
+        return Ok(name);
+    }
     take_while(1.., |c: char| c.is_alphanumeric() || c == '_' || c == '-').parse_next(input)
 }
 
