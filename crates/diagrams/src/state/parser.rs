@@ -6,7 +6,7 @@ use rusty_mermaid_core::Direction;
 
 use crate::common::error::{ParseError, ParseErrorKind};
 use crate::common::styling::{ClassDef, class_apply_body, class_def_body, style_stmt_body};
-use crate::common::tokens::{identifier, skip, unescape_unicode, ws};
+use crate::common::tokens::{identifier, skip, skip_char, unescape_unicode, ws};
 
 use super::ir::*;
 
@@ -66,7 +66,7 @@ fn parse_body(input: &mut &str, ctx: &mut ParseCtx, is_top_level: bool) -> Modal
             break;
         }
         if !try_parse_statement(input, ctx, is_top_level)? && !input.is_empty() {
-            *input = &input[1..];
+            skip_char(input);
         }
     }
     Ok(())
@@ -329,7 +329,7 @@ fn parse_composite_state(input: &mut &str, outer_ctx: &mut ParseCtx) -> ModalRes
         inner_ctx.states = std::mem::take(&mut region_children);
         inner_ctx.transitions = std::mem::take(&mut region_trans);
         if !try_parse_statement(input, &mut inner_ctx, false)? && !input.is_empty() {
-            *input = &input[1..];
+            skip_char(input);
         }
         region_children = std::mem::take(&mut inner_ctx.states);
         region_trans = std::mem::take(&mut inner_ctx.transitions);

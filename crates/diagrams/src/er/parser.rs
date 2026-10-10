@@ -6,7 +6,7 @@ use rusty_mermaid_core::Direction;
 
 use crate::common::error::{ParseError, ParseErrorKind};
 use crate::common::styling::{class_def_body, style_stmt_body};
-use crate::common::tokens::{identifier, skip, ws};
+use crate::common::tokens::{identifier, skip, skip_char, ws};
 
 use super::ir::*;
 
@@ -36,7 +36,7 @@ fn parse_statements(input: &mut &str, diagram: &mut ErDiagram) -> ModalResult<()
             break;
         }
         if !try_parse_statement(input, diagram)? && !input.is_empty() {
-            *input = &input[1..];
+            skip_char(input);
         }
     }
     Ok(())

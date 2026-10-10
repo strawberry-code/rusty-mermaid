@@ -206,3 +206,11 @@ pub fn style_class<'i>(input: &mut &'i str) -> ModalResult<&'i str> {
 #[cfg(test)]
 #[path = "tokens_tests.rs"]
 mod tokens_tests;
+
+/// Salta un carattere (non un byte): `&input[1..]` va in panic quando il
+/// primo carattere non è ASCII, perché il byte 1 cade dentro la sequenza UTF-8.
+pub fn skip_char(input: &mut &str) {
+    if let Some(c) = input.chars().next() {
+        *input = &input[c.len_utf8()..];
+    }
+}

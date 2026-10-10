@@ -36,7 +36,14 @@ fn parse_flowchart(input: &mut &str) -> ModalResult<FlowDiagram> {
 fn header(input: &mut &str) -> ModalResult<Direction> {
     let _keyword = alt(("flowchart", "graph")).parse_next(input)?;
     ws.parse_next(input)?;
-    direction(input)
+    let dir = direction(input)?;
+    // `TDX` non è `TD`: la direzione finisce dove finisce la parola.
+    if input.starts_with(|c: char| c.is_alphanumeric() || c == '_') {
+        return Err(winnow::error::ErrMode::Backtrack(
+            winnow::error::ContextError::new(),
+        ));
+    }
+    Ok(dir)
 }
 
 /// Parse statements until EOF or `end` keyword.

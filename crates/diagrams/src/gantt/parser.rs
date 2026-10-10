@@ -199,9 +199,10 @@ fn interpret_date_parts(
 
 fn is_duration(s: &str) -> bool {
     let s = s.trim();
-    s.len() >= 2
-        && s[..s.len() - 1].chars().all(|c| c.is_ascii_digit())
-        && matches!(s.chars().last(), Some('d' | 'w' | 'h' | 'm'))
+    match s.char_indices().last() {
+        Some((i, 'd' | 'w' | 'h' | 'm')) => i >= 1 && s[..i].chars().all(|c| c.is_ascii_digit()),
+        _ => false,
+    }
 }
 
 fn looks_like_date(s: &str) -> bool {

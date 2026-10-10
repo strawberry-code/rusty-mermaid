@@ -3,7 +3,7 @@ use winnow::prelude::*;
 use winnow::token::take_while;
 
 use crate::common::error::{ParseError, ParseErrorKind};
-use crate::common::tokens::{identifier, skip, ws};
+use crate::common::tokens::{identifier, skip, skip_char, ws};
 
 use super::ir::*;
 
@@ -59,7 +59,7 @@ fn parse_items(
         if !try_parse_statement(input, ctx, &mut items)? {
             // Skip unrecognized character
             if !input.is_empty() {
-                *input = &input[1..];
+                skip_char(input);
             }
         }
     }
@@ -90,12 +90,15 @@ fn starts_with_keyword(input: &str, keyword: &str) -> bool {
 
 /// Case-insensitive keyword check (for "Note"/"note").
 fn starts_with_keyword_ci(input: &str, keyword: &str) -> bool {
-    input.len() >= keyword.len() && input[..keyword.len()].eq_ignore_ascii_case(keyword) && {
-        let rest = &input[keyword.len()..];
-        rest.is_empty()
-            || rest.starts_with(|c: char| c.is_ascii_whitespace())
-            || rest.starts_with("%%")
-    }
+    input
+        .get(..keyword.len())
+        .is_some_and(|head| head.eq_ignore_ascii_case(keyword))
+        && {
+            let rest = &input[keyword.len()..];
+            rest.is_empty()
+                || rest.starts_with(|c: char| c.is_ascii_whitespace())
+                || rest.starts_with("%%")
+        }
 }
 
 fn try_parse_statement(
