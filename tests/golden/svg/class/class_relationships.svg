@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 395.8 296" width="395.8" height="296">
   <defs>
-    <marker id="arrow-barb-333333" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M10 5 L0 10 L4 5 L0 0 Z" fill="white" stroke="#333333" stroke-width="1" stroke-linejoin="round" />
+    <marker id="marker-extension-333333" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="white" stroke="#333333" stroke-width="1" />
     </marker>
     <marker id="marker-composition-333333" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
       <path d="M0 6 L6 0 L12 6 L6 12 Z" fill="#333333" />
@@ -14,7 +14,7 @@
     </marker>
   </defs>
   <g transform="translate(20, 20)">
-    <path d="M46.1 43.2 L46.1 46.37 C46.1 51.93 46.1 63.07 62.12 74.96 C78.13 86.86 110.17 99.53 126.18 105.86 L142.2 112.19" fill="none" stroke="#333333" stroke-width="1.5" marker-start="url(#arrow-barb-333333)" />
+    <path d="M46.1 43.2 L46.1 46.37 C46.1 51.93 46.1 63.07 62.12 74.96 C78.13 86.86 110.17 99.53 126.18 105.86 L142.2 112.19" fill="none" stroke="#333333" stroke-width="1.5" marker-start="url(#marker-extension-333333)" />
     <rect x="-5.2" y="61.8" width="102.6" height="24.8" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
     <text x="46.1" y="74.2" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">inheritance</text>
     <path d="M147.01 149.44 L139.58 153.97 C130.45 159.53 112.17 170.67 103.04 181.8 C93.9 192.93 93.9 204.07 93.9 209.63 L93.9 215.2" fill="none" stroke="#333333" stroke-width="1.5" marker-start="url(#marker-composition-333333)" />

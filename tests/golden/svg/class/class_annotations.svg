@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 715.76 314" width="715.76" height="314">
   <defs>
-    <marker id="arrow-barb-333333" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M10 5 L0 10 L4 5 L0 0 Z" fill="white" stroke="#333333" stroke-width="1" stroke-linejoin="round" />
+    <marker id="marker-extension-333333" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="white" stroke="#333333" stroke-width="1" />
     </marker>
   </defs>
   <g transform="translate(20, 20)">
-    <path d="M106.3 106 L106.3 110.57 C106.3 117.53 106.3 131.47 106.3 144 C106.3 156.53 106.3 167.67 106.3 173.23 L106.3 178.8" fill="none" stroke="#333333" stroke-width="1.5" stroke-dasharray="6 4" marker-start="url(#arrow-barb-333333)" />
+    <path d="M106.3 106 L106.3 110.57 C106.3 117.53 106.3 131.47 106.3 144 C106.3 156.53 106.3 167.67 106.3 173.23 L106.3 178.8" fill="none" stroke="#333333" stroke-width="1.5" stroke-dasharray="6 4" marker-start="url(#marker-extension-333333)" />
     <rect x="59.3" y="133" width="94" height="24.8" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
     <text x="106.3" y="145.4" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">implements</text>
     <rect x="0" y="8.4" width="212.6" height="95.2" rx="3" ry="3" fill="#ececffb2" stroke="#9370db" stroke-width="1.5" />

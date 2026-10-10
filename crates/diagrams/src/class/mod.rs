@@ -128,7 +128,7 @@ fn render_edges(layout: &LayoutResult, scene: &mut Scene, theme: &Theme) {
 
 fn relation_to_marker(rt: RelationType) -> Option<MarkerType> {
     match rt {
-        RelationType::Extension => Some(MarkerType::ArrowBarb),
+        RelationType::Extension => Some(MarkerType::Extension),
         RelationType::Composition => Some(MarkerType::Composition),
         RelationType::Aggregation => Some(MarkerType::Aggregation),
         RelationType::Dependency => Some(MarkerType::ArrowPoint),
@@ -451,14 +451,14 @@ mod tests {
         let scene = render("classDiagram\n    A <|-- B");
         let has_extension = scene.elements().iter().any(|e| {
             if let Primitive::Path { marker_start, .. } = &e.primitive {
-                *marker_start == Some(MarkerType::ArrowBarb)
+                *marker_start == Some(MarkerType::Extension)
             } else {
                 false
             }
         });
         assert!(
             has_extension,
-            "<|-- should place open arrow marker at from (left) end"
+            "<|-- should place the hollow triangle at from (left) end"
         );
     }
 }

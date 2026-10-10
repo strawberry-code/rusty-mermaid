@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 663.7 521.6" width="663.7" height="521.6">
   <defs>
-    <marker id="arrow-barb-333333" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M10 5 L0 10 L4 5 L0 0 Z" fill="white" stroke="#333333" stroke-width="1" stroke-linejoin="round" />
+    <marker id="marker-extension-333333" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="white" stroke="#333333" stroke-width="1" />
     </marker>
     <marker id="marker-aggregation-333333" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
       <path d="M0 6 L6 0 L12 6 L6 12 Z" fill="white" stroke="#333333" stroke-width="1" />
@@ -11,10 +11,10 @@
     </marker>
   </defs>
   <g transform="translate(20, 20)">
-    <path d="M115.47 300.41 L111.12 304.37 C105 309.93 92.75 321.07 86.62 333.6 C80.5 346.13 80.5 360.07 80.5 367.03 L80.5 374" fill="none" stroke="#333333" stroke-width="1.5" marker-start="url(#arrow-barb-333333)" />
+    <path d="M115.47 300.41 L111.12 304.37 C105 309.93 92.75 321.07 86.62 333.6 C80.5 346.13 80.5 360.07 80.5 367.03 L80.5 374" fill="none" stroke="#333333" stroke-width="1.5" marker-start="url(#marker-extension-333333)" />
     <rect x="46.4" y="319.8" width="68.2" height="24.8" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
     <text x="80.5" y="332.2" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">extends</text>
-    <path d="M265.13 300.41 L269.48 304.37 C275.6 309.93 287.85 321.07 293.98 332.2 C300.1 343.33 300.1 354.47 300.1 360.03 L300.1 365.6" fill="none" stroke="#333333" stroke-width="1.5" marker-start="url(#arrow-barb-333333)" />
+    <path d="M265.13 300.41 L269.48 304.37 C275.6 309.93 287.85 321.07 293.98 332.2 C300.1 343.33 300.1 354.47 300.1 360.03 L300.1 365.6" fill="none" stroke="#333333" stroke-width="1.5" marker-start="url(#marker-extension-333333)" />
     <rect x="266" y="319.8" width="68.2" height="24.8" rx="2" ry="2" fill="#f5f3ffbf" stroke="#f5f3ffbf" stroke-width="0.5" />
     <text x="300.1" y="332.2" text-anchor="middle" dominant-baseline="central" font-size="12px" font-family="'Intel One Mono', 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Menlo', monospace" fill="#333333">extends</text>
     <path d="M151.6 101.2 L151.6 104.77 C151.6 110.33 151.6 121.47 153.76 132.6 C155.92 143.73 160.23 154.87 162.39 160.43 L164.55 166" fill="none" stroke="#333333" stroke-width="1.5" marker-start="url(#marker-aggregation-333333)" />
