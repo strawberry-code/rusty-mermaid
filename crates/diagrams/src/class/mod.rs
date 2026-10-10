@@ -112,20 +112,16 @@ fn render_edges(layout: &LayoutResult, scene: &mut Scene, theme: &Theme) {
             render_edge_label(scene, mid, label, edge.label_size, theme);
         }
 
-        // Cardinality text near endpoints. Both use the forward edge
-        // direction for perpendicular offset (same side). The "to" end
-        // reverses the along-offset to move inward from its endpoint.
-        let Some(last_pt) = edge.points.last() else {
-            continue;
-        };
-        let fwd_dx = last_pt.x - edge.points[0].x;
-        let fwd_dy = last_pt.y - edge.points[0].y;
+        // Cardinality text near endpoints, along the local tangent of each end
+        // (a curved edge can arrive from the side, where the overall direction
+        // would put the text on top of the box).
+        let pts = &edge.points;
+        let n = pts.len();
         if let Some(card) = &edge_layout.cardinality_from {
-            render_cardinality(scene, edge.points[0], fwd_dx, fwd_dy, 1.0, card, theme);
+            render_cardinality(scene, pts[0], pts[1], 1.0, card, theme);
         }
         if let Some(card) = &edge_layout.cardinality_to {
-            let n = edge.points.len();
-            render_cardinality(scene, edge.points[n - 1], fwd_dx, fwd_dy, -1.0, card, theme);
+            render_cardinality(scene, pts[n - 1], pts[n - 2], -1.0, card, theme);
         }
     }
 }
@@ -149,32 +145,36 @@ const CARDINALITY_INWARD: f64 = 9.0;
 fn render_cardinality(
     scene: &mut Scene,
     endpoint: Point,
-    fwd_dx: f64,
-    fwd_dy: f64,
-    inward_sign: f64,
+    inner: Point,
+    side: f64,
     text: &str,
     theme: &Theme,
 ) {
-    let len = (fwd_dx * fwd_dx + fwd_dy * fwd_dy).sqrt();
+    let (dx, dy) = (inner.x - endpoint.x, inner.y - endpoint.y);
+    let len = (dx * dx + dy * dy).sqrt();
     if len < 1e-6 {
         return;
     }
 
-    let tx = fwd_dx / len;
-    let ty = fwd_dy / len;
-    let nx = fwd_dy / len;
-    let ny = -fwd_dx / len;
-
-    // Along-edge: "from" goes forward (+1), "to" goes backward (-1) — both toward midpoint
+    // Unit tangent pointing from the endpoint into the edge; `side` keeps both
+    // ends on the same side of the forward direction.
+    let (tx, ty) = (dx / len, dy / len);
+    let (nx, ny) = (side * ty, -side * tx);
     let pos = Point::new(
-        endpoint.x + tx * CARDINALITY_INWARD * inward_sign + nx * CARDINALITY_PERP,
-        endpoint.y + ty * CARDINALITY_INWARD * inward_sign + ny * CARDINALITY_PERP,
+        endpoint.x + tx * CARDINALITY_INWARD + nx * CARDINALITY_PERP,
+        endpoint.y + ty * CARDINALITY_INWARD + ny * CARDINALITY_PERP,
     );
+    // A label that falls to the left of the endpoint must grow leftwards.
+    let anchor = if pos.x < endpoint.x {
+        TextAnchor::End
+    } else {
+        TextAnchor::Start
+    };
 
     scene.push(Primitive::Text {
         position: pos,
         content: text.to_string(),
-        anchor: TextAnchor::Start,
+        anchor,
         style: TextStyle {
             font_size: theme.font_size_small,
             fill: Some(theme.edge_label_text),
