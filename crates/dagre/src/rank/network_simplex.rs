@@ -5,6 +5,21 @@ use crate::rank::feasible_tree::{NsTree, feasible_tree_mut};
 use crate::rank::longest_path::longest_path;
 use crate::util;
 
+/// Scambi consecutivi senza miglioramento dopo i quali si dà per ciclato.
+const MAX_STALLED_PIVOTS: u32 = 32;
+
+/// Somma pesata delle lunghezze d'arco: la funzione che il simplex minimizza.
+fn total_length(graph: &Graph<NodeLabel, EdgeLabel>) -> f64 {
+    graph
+        .edge_ids()
+        .filter_map(|e| {
+            let (a, b) = graph.edge_endpoints(e)?;
+            let (ra, rb) = (graph.node(a)?.rank, graph.node(b)?.rank);
+            Some(graph.edge(e)?.weight * f64::from(rb - ra))
+        })
+        .sum()
+}
+
 /// Optimal rank assignment using the network simplex algorithm.
 /// Minimizes total weighted edge length subject to minlen constraints.
 pub(crate) fn network_simplex(graph: &mut Graph<NodeLabel, EdgeLabel>) {
@@ -20,6 +35,9 @@ pub(crate) fn network_simplex(graph: &mut Graph<NodeLabel, EdgeLabel>) {
 
     let max_iter = graph.node_count() * graph.node_count();
     let mut iter = 0;
+    // Lunghezza pesata totale e scambi consecutivi che non l'hanno abbassata.
+    let mut best = total_length(graph);
+    let mut stalled = 0;
     while let Some((leave_u, leave_v)) = find_leave_edge(&tree) {
         if let Some((enter_src, enter_dst)) = find_enter_edge(&tree, graph, leave_u, leave_v) {
             exchange(&mut tree, graph, leave_u, leave_v, enter_src, enter_dst);
@@ -29,6 +47,19 @@ pub(crate) fn network_simplex(graph: &mut Graph<NodeLabel, EdgeLabel>) {
         iter += 1;
         if iter >= max_iter {
             break;
+        }
+        // Gli scambi degeneri (stesso costo) possono ciclare per sempre: sui
+        // grafi con molti incroci l'ottimo si raggiunge in pochi scambi e il
+        // resto di `n^2` girava a vuoto (150 nodi: 22801 scambi, 2,3 s).
+        let now = total_length(graph);
+        if now < best {
+            best = now;
+            stalled = 0;
+        } else {
+            stalled += 1;
+            if stalled >= MAX_STALLED_PIVOTS {
+                break;
+            }
         }
     }
 
