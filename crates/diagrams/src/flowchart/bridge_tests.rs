@@ -41,6 +41,22 @@ fn layout_from_parsed_mmd() {
 }
 
 #[test]
+fn nested_directed_subgraphs_keep_children_inside() {
+    let mmd = "flowchart TD\n    subgraph outer\n        direction LR\n        A --> B\n        subgraph inner\n            direction TB\n            C --> D\n        end\n    end";
+    let d = crate::flowchart::parser::parse(mmd).unwrap();
+    let result = layout(&d);
+    let inner = result.subgraphs.iter().find(|sg| sg.id == "inner").unwrap();
+    for id in ["C", "D"] {
+        let n = result.nodes.iter().find(|n| n.id == id).unwrap();
+        assert!(
+            (n.x - inner.x).abs() <= inner.width / 2.0
+                && (n.y - inner.y).abs() <= inner.height / 2.0,
+            "{id} fuori da inner"
+        );
+    }
+}
+
+#[test]
 fn subgraph_contains_children() {
     let mmd = "graph TD\n    subgraph outer[Outer]\n        subgraph inner[Inner]\n            A[Node A] --> B[Node B]\n        end\n        C[Node C]\n    end\n    C --> D[Node D]";
     let d = crate::flowchart::parser::parse(mmd).unwrap();

@@ -116,7 +116,10 @@ fn apply_subgraph_positions(
     id_map: &BTreeMap<&str, NodeId>,
     graph: &mut Graph<NodeLabel, EdgeLabel>,
 ) {
-    for ex in extracted {
+    // `extracted` va dal più interno al più esterno; qui serve il contrario, perché
+    // un sottografo annidato prende la sua posizione dall'esterno e solo dopo
+    // i suoi nodi possono disporsi relativamente a lui.
+    for ex in extracted.iter().rev() {
         let Some(&sg_nid) = id_map.get(ex.sg_id.as_str()) else {
             continue;
         };
@@ -149,6 +152,17 @@ fn apply_subgraph_positions(
             n.width = *w;
             n.height = *h;
         }
+    }
+    // Gli archi interni in ordine di estrazione (ordine stabile dell'SVG), ma
+    // dopo che ogni sottografo, annidati compresi, ha la sua posizione finale.
+    for ex in extracted {
+        let Some(&sg_nid) = id_map.get(ex.sg_id.as_str()) else {
+            continue;
+        };
+        let Some(sg) = graph.node(sg_nid) else {
+            continue;
+        };
+        let (sg_cx, sg_cy) = (sg.x, sg.y);
         for edge in &ex.inner_edges {
             let Some(&src) = id_map.get(edge.src.as_str()) else {
                 continue;
